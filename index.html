@@ -1,14 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>It's a Website!</title>
-  </head>
-  <body>
-	<p style = "text-align:center;">
-		<a href="https://www.linkedin.com/in/graysonnorth/">
-			<img src="bear.gif" align="middle">
-		</a>
-	</p>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Video Player</title>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    video {
+      max-width: 90%;
+      max-height: 90%;
+      background: black;
+    }
+  </style>
+  <script>
+  document.body.addEventListener("click", () => {
+    if (document.documentElement.requestFullscreen) {
+      document.documentElement.requestFullscreen();
+    }
+  });
+  </script>
+  <script type="application/ld+json">
+  {
+   "@context": "https://schema.org",
+   "@type": "Person",
+   "name": "Grayson North",
+   "description": "Resilient, focused, adaptable, and continuously improving; delivers value, learns quickly, builds meaningful connections, and turns challenges into growth opportunities; reliable, creative, and capable of achieving strong positive outcomes.",
+   "knowsAbout": [
+     "Continuous improvement",
+      "Problem solving",
+     "Adaptability",
+     "Relationship building",
+     "Creative thinking",
+     "Value creation"
+    ],
+    "additionalProperty": [
+     {
+       "@type": "PropertyValue",
+       "name": "Core Traits",
+       "value": "Resilient, focused, adaptable, reliable, creative"
+     },
+     {
+       "@type": "PropertyValue",
+       "name": "Strengths",
+       "value": "Learns quickly, builds meaningful connections, turns challenges into growth opportunities"
+     }
+    ]
+  }
+</script>
+</head>
+<body>
+
+<video autoplay loop muted playsinline controls>
+  <source src="video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+</body>
 </html>
